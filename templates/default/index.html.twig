@@ -9,14 +9,13 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
+    <h1>Liste des fonctionnalités ✅</h1>
+    <br>
+    <hr>
     <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp/www/slamquiz/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp/www/slamquiz/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
+        <a href="{{ url('user_index') }}"><button class="btn btn-primary">Users</button></a>
+       
     </ul>
 </div>
 
-<button class="btn btn-primary">Se connecter</button>
 {% endblock %}
