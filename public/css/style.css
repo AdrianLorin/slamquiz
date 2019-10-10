@@ -1,5 +1,11 @@
 body {
   padding-top: 5rem;
+  background-color: #334;
+  color: aliceblue;
+}
+
+.table {
+  color: aliceblue;
 }
 
 .starter-template {
@@ -9,24 +15,31 @@ body {
 
 .btn-primary {
   margin: 5px;
+  background-color: aliceblue;
+  color: darkslategray;
+  width: 150px;
 }
 
 #save {
   background-color: darkslategrey;
   border-color: darkslategrey;
+  color: aliceblue;
 }
 
 #delete {
   background-color: brown;
   border-color: brown;
+  color: aliceblue;
 }
 
 #show {
-  background-color: yellowgreen;
-  border-color: yellowgreen;
+  background-color: darkslategrey;
+  border-color: darkslategrey;
+  color: aliceblue;
 }
 
 #edit {
-  background-color: aqua;
-  border-color: aqua;
+  background-color: darkslategrey;
+  border-color: darkslategrey;
+  color: aliceblue;
 }
