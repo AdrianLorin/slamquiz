@@ -1,7 +1,32 @@
 body {
   padding-top: 5rem;
 }
+
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
+}
+
+.btn-primary {
+  margin: 5px;
+}
+
+#save {
+  background-color: darkslategrey;
+  border-color: darkslategrey;
+}
+
+#delete {
+  background-color: brown;
+  border-color: brown;
+}
+
+#show {
+  background-color: yellowgreen;
+  border-color: yellowgreen;
+}
+
+#edit {
+  background-color: aqua;
+  border-color: aqua;
 }
