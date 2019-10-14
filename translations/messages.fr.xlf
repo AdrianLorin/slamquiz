@@ -89,6 +89,14 @@
         <source>Users</source>
         <target>Utilisateurs</target>
       </trans-unit>
+      <trans-unit id="LITdjVn" resname="Dropdown">
+        <source>Dropdown</source>
+        <target>Menu déroulant</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>Enregistrer</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
