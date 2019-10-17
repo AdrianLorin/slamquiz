@@ -18,6 +18,8 @@ class UserController extends AbstractController {
 
     public function index () {
 
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+
         $usersList = array();
 
         $usersList[0]['first_name'] = 'Harry';

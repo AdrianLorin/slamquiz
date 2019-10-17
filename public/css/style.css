@@ -43,3 +43,11 @@ body {
   border-color: darkslategrey;
   color: aliceblue;
 }
+
+.form-control {
+  width: 300px;
+  display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}

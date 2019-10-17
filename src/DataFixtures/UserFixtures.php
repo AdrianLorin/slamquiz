@@ -27,6 +27,7 @@ class UserFixtures extends Fixture
         // Admin
         $user = new Adminsecure();
         $user->setEmail('admin@slamquiz.com');
+        $user->setRoles(['ROLE_ADMIN']);
         $user->setPassword('$argon2id$v=19$m=65536,t=4,p=1$MzBMRzhrOTFhWWpBZkNhdQ$VytYUoeCcf7XrumkZeCyETdMUKYhhUPK0jIN0tK0JqY');
         $manager->persist($user);
 
