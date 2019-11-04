@@ -1,1 +1,1 @@
-![Image](https://raw.githubusercontent.com/AdrianLorin/slamquiz/master/assets/screenshot_home_en.jpg | width=600)
+![Image](https://raw.githubusercontent.com/AdrianLorin/slamquiz/master/assets/screenshot_home_en.jpg =600x)
