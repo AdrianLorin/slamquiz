@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -96,6 +96,42 @@
       <trans-unit id="FQn1YfJ" resname="Save">
         <source>Save</source>
         <target>Enregistrer</target>
+      </trans-unit>
+      <trans-unit id="kBiC9T_" resname="Have you ever heard that you wanted to go green? In what way ? Well today you can do it without any effort saving paper and saving trees with SlamQuiz!">
+        <source>Have you ever heard that you wanted to go green? In what way ? Well today you can do it without any effort saving paper and saving trees with SlamQuiz!</source>
+        <target>Vous êtes vous déjà dit un jour que vous vouliez devenir écolo ? Par quel moyen ? Eh bien aujourd'hui vous pouvez le devenir sans aucun effort en économisant du papier et en sauvant des arbres avec SlamQuiz !</target>
+      </trans-unit>
+      <trans-unit id="7QpBw4a" resname="Here is the tool for you! SlamQuiz is great, I assure you, it is approved by myself, then I have to sell it no?">
+        <source>Here is the tool for you! SlamQuiz is great, I assure you, it is approved by myself, then I have to sell it no?</source>
+        <target>Voici l'outil qu'il vous faut ! SlamQuiz est génial, je vous assure, il est approuvé par moi même, puis il faut bien que je le vende non ?</target>
+      </trans-unit>
+      <trans-unit id="VpfQPa7" resname="Features">
+        <source>Features</source>
+        <target>Fonctionnalités</target>
+      </trans-unit>
+      <trans-unit id="IpqMtYt" resname="Motivating interactive content (I assure you it's true)">
+        <source>Motivating interactive content (I assure you it's true)</source>
+        <target>Contenu interactif motivant (je vous assure c'est vrai)</target>
+      </trans-unit>
+      <trans-unit id="B0YGaBK" resname="Automatic notation (it's still a real revolution)">
+        <source>Automatic notation (it's still a real revolution)</source>
+        <target>Notation automatique (c'est quand même une réelle révolution)</target>
+      </trans-unit>
+      <trans-unit id="TRa.IKU" resname="Real-time activity tracking (receive student results by email)">
+        <source>Real-time activity tracking (receive student results by email)</source>
+        <target>Suivi d'activité en temps réel (recevez les résultats des élèves par email)</target>
+      </trans-unit>
+      <trans-unit id="Y.Ta.8n" resname="Test your students via a smartphone and deliver live results at a presentation">
+        <source>Test your students via a smartphone and deliver live results at a presentation</source>
+        <target>Testez vos élèves via un smartphone et fournissez des résultats en direct lors d'une présentation</target>
+      </trans-unit>
+      <trans-unit id="3cgEfSj" resname="License: It is a free software but paying, must not forget that we are a Capitalist country anyway">
+        <source>License: It is a free software but paying, must not forget that we are a Capitalist country anyway</source>
+        <target>License : C'est un logiciel libre mais payant, faut pas oublier qu'on est un pays Capitaliste quand même</target>
+      </trans-unit>
+      <trans-unit id="QGgTGWS" resname="Let's go !">
+        <source>Let's go !</source>
+        <target>En avant !</target>
       </trans-unit>
     </body>
   </file>

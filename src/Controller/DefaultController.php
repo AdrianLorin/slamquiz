@@ -12,7 +12,7 @@ class DefaultController extends AbstractController
      */
     public function index()
     {
-        $this->denyAccessUnlessGranted('ROLE_USER');
+        
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
