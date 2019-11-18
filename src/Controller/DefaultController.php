@@ -12,6 +12,7 @@ class DefaultController extends AbstractController
      */
     public function index()
     {
+        
         return $this->render('default/index.html.twig', [
             'controller_name' => 'DefaultController',
         ]);
@@ -21,6 +22,7 @@ class DefaultController extends AbstractController
      * @Route("/user", name="default_user")
      */
     public function user() {
+        $this->denyAccessUnlessGranted('ROLE_USER');
         $firstName ="Michel";
         $lastName ="DUPOND";
         return $this->render('default/user.html.twig', [

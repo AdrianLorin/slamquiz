@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User index{% endblock %}
+
+{% block body %}
+    <h1>Adminsecure index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Email</th>
+                <th>Roles</th>
+                <th>Password</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for adminsecure in adminsecures %}
+            <tr>
+                <td>{{ adminsecure.id }}</td>
+                <td>{{ adminsecure.email }}</td>
+                <td>{{ adminsecure.roles ? adminsecure.roles|json_encode : '' }}</td>
+                <td>{{ adminsecure.password }}</td>
+                <td>
+                    <a href="{{ path('user_show', {'id': adminsecure.id}) }}">show</a>
+                    <a href="{{ path('user_edit', {'id': adminsecure.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('user_new') }}">Create new</a>
+{% endblock %}

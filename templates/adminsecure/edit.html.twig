@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Adminsecure{% endblock %}
+
+{% block body %}
+    <h1>Edit Adminsecure</h1>
+
+    {{ include('adminsecure/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('user_index') }}">back to list</a>
+
+    {{ include('adminsecure/_delete_form.html.twig') }}
+{% endblock %}
