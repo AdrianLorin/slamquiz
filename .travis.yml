@@ -13,11 +13,9 @@ services:
 before_script:
   - composer install
   - psql -c "CREATE DATABASE slamquiz;" -U postgres
-  - pqsl -c "CREATE ROLE slamquiz password 'root' login;" -U postgres
-  - pqsl -c "GRANT ALL ON DATABASE slamquiz TO slamquiz WITH GRANT OPTION;" -U postgres
-  - php bin/console doctrine:migrations:migrate
-  - -> y
-  - php bin/console doctrine:fixtures:load
-  - -> y
+  - psql -c "CREATE ROLE slamquiz password 'root' login;" -U postgres
+  - psql -c "GRANT ALL ON DATABASE slamquiz TO slamquiz WITH GRANT OPTION;" -U postgres
+  - php bin/console doctrine:migrations:migrate --force
+  - php bin/console doctrine:fixtures:load --force
 
 script: phpunit --coverage-text
