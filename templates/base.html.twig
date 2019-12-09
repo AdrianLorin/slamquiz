@@ -26,9 +26,16 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ path('default') }}">{% trans %}Home{% endtrans %} <span class="sr-only">(current)</span></a>
                 </li>
+                {% if is_granted('ROLE_USER') %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{ path('category_index') }}">{% trans %}Category{% endtrans %}</a>
                 </li>
+                {% if is_granted('ROLE_ADMIN') %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('answer_index') }}">{% trans %}Answer{% endtrans %}</a>
+                </li>
+                {% endif %}
+                {% endif %}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{% trans %}Dropdown{% endtrans %}</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">

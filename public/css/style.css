@@ -36,12 +36,14 @@ body {
   background-color: darkslategrey;
   border-color: darkslategrey;
   color: aliceblue;
+  width: 80px;
 }
 
 #edit {
   background-color: darkslategrey;
   border-color: darkslategrey;
   color: aliceblue;
+  width: 80px;
 }
 
 .form-control {

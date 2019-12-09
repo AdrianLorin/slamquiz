@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
@@ -132,6 +132,38 @@
       <trans-unit id="QGgTGWS" resname="Let's go !">
         <source>Let's go !</source>
         <target>En avant !</target>
+      </trans-unit>
+      <trans-unit id="nVRn3MP" resname="Edit Answer">
+        <source>Edit Answer</source>
+        <target>Editer la réponse</target>
+      </trans-unit>
+      <trans-unit id="VSfIL5D" resname="Answer index">
+        <source>Answer index</source>
+        <target>Liste des réponses</target>
+      </trans-unit>
+      <trans-unit id="cZiMTY4" resname="Text">
+        <source>Text</source>
+        <target>Texte</target>
+      </trans-unit>
+      <trans-unit id="rKAaGjo" resname="Correct">
+        <source>Correct</source>
+        <target>Correcte</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>actions</target>
+      </trans-unit>
+      <trans-unit id="n8b.YPP" resname="New Answer">
+        <source>New Answer</source>
+        <target>Nouvelle réponse</target>
+      </trans-unit>
+      <trans-unit id="qBTARCG" resname="Create new Answer">
+        <source>Create new Answer</source>
+        <target>Créer une nouvelle réponse</target>
+      </trans-unit>
+      <trans-unit id="sqOqYCd" resname="Answer">
+        <source>Answer</source>
+        <target>Réponse</target>
       </trans-unit>
     </body>
   </file>

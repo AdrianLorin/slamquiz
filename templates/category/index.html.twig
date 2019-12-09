@@ -21,10 +21,14 @@
                 <td>{{ category.id }}</td>
                 <td>{{ category.shortname }}</td>
                 <td>{{ category.longname }}</td>
+                
                 <td>
                     <a class="btn btn-primary" id="show" href="{{ path('category_show', {'id': category.id}) }}">{% trans %}show{% endtrans %}</a>
+                    {% if is_granted('ROLE_ADMIN') %}
                     <a class="btn btn-primary" id="edit" href="{{ path('category_edit', {'id': category.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    {% endif %}
                 </td>
+                
             </tr>
         {% else %}
             <tr>
@@ -33,6 +37,7 @@
         {% endfor %}
         </tbody>
     </table>
-
+    {% if is_granted('ROLE_ADMIN') %}
     <a  class="btn btn-primary" href="{{ path('category_new') }}">{% trans %}Create new{% endtrans %}</a>
+    {% endif %}
 {% endblock %}

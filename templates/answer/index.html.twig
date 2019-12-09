@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Answer index{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}Answer index{% endtrans %}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>{% trans %}Text{% endtrans %}</th>
+                <th>{% trans %}Correct{% endtrans %}</th>
+                <th>{% trans %}actions{% endtrans %}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for answer in answers %}
+            <tr>
+                <td>{{ answer.id }}</td>
+                <td>{{ answer.text }}</td>
+                <td>{{ answer.correct }}</td>
+                <td>
+                    <a class="btn btn-primary" id="show" href="{{ path('answer_show', {'id': answer.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a class="btn btn-primary" id="edit" href="{{ path('answer_edit', {'id': answer.id}) }}">{% trans %}edit{% endtrans %}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">{% trans %}no records found{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-primary" href="{{ path('answer_new') }}">{% trans %}Create new{% endtrans %}</a>
+{% endblock %}
