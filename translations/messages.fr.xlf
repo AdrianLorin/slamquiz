@@ -165,6 +165,46 @@
         <source>Answer</source>
         <target>Réponse</target>
       </trans-unit>
+      <trans-unit id="nibTd3r" resname="Edit Question">
+        <source>Edit Question</source>
+        <target>Editer Question</target>
+      </trans-unit>
+      <trans-unit id="2p1awvt" resname="Question index">
+        <source>Question index</source>
+        <target>Liste Question</target>
+      </trans-unit>
+      <trans-unit id="uLHYlMa" resname="Categories">
+        <source>Categories</source>
+        <target>Catégories</target>
+      </trans-unit>
+      <trans-unit id="ldY1tXH" resname="Create new question with">
+        <source>Create new question with</source>
+        <target>Créer une nouvelle question avec</target>
+      </trans-unit>
+      <trans-unit id="Z3.iG2X" resname="answers">
+        <source>answers</source>
+        <target>réponses</target>
+      </trans-unit>
+      <trans-unit id="zI7aMg3" resname="New Question">
+        <source>New Question</source>
+        <target>Nouvelle Question</target>
+      </trans-unit>
+      <trans-unit id="E2JqnxS" resname="Create new Question">
+        <source>Create new Question</source>
+        <target>Créer une nouvelle Question</target>
+      </trans-unit>
+      <trans-unit id="S9iCKr8" resname="Created_at">
+        <source>Created_at</source>
+        <target>Créer le</target>
+      </trans-unit>
+      <trans-unit id="0Y.II8I" resname="Updated_at">
+        <source>Updated_at</source>
+        <target>Mis à jour le</target>
+      </trans-unit>
+      <trans-unit id="StCgpq5" resname="Answers">
+        <source>Answers</source>
+        <target>Réponses</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

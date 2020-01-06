@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Question index{% endtrans %}{% endblock %}
+
+{% block body %}
+    <h1>{% trans %}Question index{% endtrans %}</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>{% trans %}Categories{% endtrans %}</th>
+                <th>{% trans %}Text{% endtrans %}</th>
+                <th>{% trans %}actions{% endtrans %}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for question in questions %}
+            <tr>
+                <td>{{ question.id }}</td>
+                <td>
+                {% for categorie in question.categories %}
+                    {{ categorie.shortname }}
+                {% endfor %}
+                </td>
+                <td>{{ question.text }}</td>
+                <td>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <a class="btn btn-primary" id="show" href="{{ path('question_show', {'id': question.id}) }}">{% trans %}show{% endtrans %}</a>
+                    <a class="btn btn-primary" id="edit" href="{{ path('question_edit', {'id': question.id}) }}">{% trans %}edit{% endtrans %}</a>
+                    {% endif %}
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">{% trans %}no records found{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% trans %}Create new question with{% endtrans %}
+    <a class="btn btn-primary" href="{{ path('question_new', {'nb': 2}) }}"> 2 {% trans %}answers{% endtrans %}</a>,
+    <a class="btn btn-primary" href="{{ path('question_new', {'nb': 3}) }}"> 3 {% trans %}answers{% endtrans %}</a>
+    or <a class="btn btn-primary" href="{{ path('question_new', {'nb': 4}) }}"> 4 {% trans %}answers{% endtrans %}</a>
+{% endblock %}
