@@ -2,19 +2,21 @@
 
 namespace App\Controller;
 
+use DateTime;
 use App\Entity\Quiz;
 use App\Form\QuizType;
 use App\Repository\QuizRepository;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 /**
  * @Route("/quiz")
  */
 class QuizController extends AbstractController
 {
+
     /**
      * @Route("/", name="quiz_index", methods={"GET"})
      */
@@ -30,6 +32,7 @@ class QuizController extends AbstractController
      */
     public function new(Request $request): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         $quiz = new Quiz();
         $form = $this->createForm(QuizType::class, $quiz);
         $form->handleRequest($request);
@@ -63,10 +66,15 @@ class QuizController extends AbstractController
      */
     public function edit(Request $request, Quiz $quiz): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
+
+        $quiz->setUpdatedAt(new DateTime());
+
         $form = $this->createForm(QuizType::class, $quiz);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
             $this->getDoctrine()->getManager()->flush();
 
             return $this->redirectToRoute('quiz_index');
@@ -83,6 +91,7 @@ class QuizController extends AbstractController
      */
     public function delete(Request $request, Quiz $quiz): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN');
         if ($this->isCsrfTokenValid('delete'.$quiz->getId(), $request->request->get('_token'))) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->remove($quiz);
